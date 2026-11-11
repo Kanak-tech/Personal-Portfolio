@@ -45,7 +45,7 @@ If you only want a single file, open `portfolio-single-file.html` instead.
 
 ## How to Customize
 
-1. **Name and logo:** replace `Your Name` and `YN` in `index.html`.
+1. **Name and logo:** replace `Kanak Prajapati` and `KP` in `index.html`.
 2. **About and education:** edit the text inside the `#about` section.
 3. **Skills:** change the skill names and the `data-level` percentages in the `#skills` section.
 4. **Projects:** edit the project cards and put your real demo and source code links in place of `#`.
