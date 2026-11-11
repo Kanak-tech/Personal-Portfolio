@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kanak Prajapati | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="glow" id="glow"></div>
+
+  <header class="header" id="header">
+    <a href="#home" class="logo"><span>KP</span>Kanak Prajapati</a>
+    <nav id="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch theme">Dark</button>
+      <button id="menu-toggle" class="icon-btn menu" type="button" aria-label="Open menu" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <span class="badge"><i></i>Open to internships</span>
+        <h1>Hi, I'm <span class="grad">Kanak Prajapati</span></h1>
+        <p class="role">I am a <strong id="typed"></strong><span class="caret" aria-hidden="true"></span></p>
+        <p class="lead">B.Tech CSE student building clean, fast and useful web apps. I turn ideas into working projects, one commit at a time.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View my work</a>
+          <a class="btn ghost" href="#contact">Contact me</a>
+        </div>
+        <div class="stats">
+          <div><b data-count="4">0</b><span>Projects built</span></div>
+          <div><b data-count="8">0</b><span>Technologies</span></div>
+          <div><b data-count="3">0</b><span>Certificates</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-card" id="tilt">
+          <div class="dots"><i></i><i></i><i></i></div>
+          <pre><code><span class="k">const</span> <span class="v">developer</span> = {
+  <span class="p">name</span>: <span class="s">"Kanak Prajapati"</span>,
+  <span class="p">course</span>: <span class="s">"B.Tech CSE"</span>,
+  <span class="p">stack</span>: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JS"</span>, <span class="s">"Python"</span>],
+  <span class="p">learning</span>: <span class="s">"AI / ML"</span>,
+  <span class="p">openToWork</span>: <span class="n">true</span>
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <div class="head"><h2>About me</h2><p>A little about who I am and what I do.</p></div>
+      <div class="bento">
+        <article class="card spot wide">
+          <h3>Who I am</h3>
+          <p>I am a B.Tech Computer Science student who learns by building. I enjoy turning small ideas into real projects, from a simple clock app to a plant disease detector. Replace this text with your own story, college name and goals.</p>
+        </article>
+        <article class="card spot">
+          <h3>Education</h3>
+          <ul class="timeline">
+            <li><b>B.Tech, Computer Science</b><span>Moradabad Institute of Technology, 2024 - 2028</span></li>
+            <li><b>Class XII</b><span>Dr.D.p.s.v.m.i.c.Bilari , 2024</span></li>
+          </ul>
+        </article>
+        <article class="card spot">
+          <h3>Interests</h3>
+          <div class="chips"><span>Web Development</span><span>Machine Learning</span><span>Problem Solving</span><span>UI Design</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal">
+      <div class="head"><h2>Skills</h2><p>Technologies I use to build things.</p></div>
+      <div class="skill-grid">
+        <article class="card spot">
+          <h3>Frontend</h3>
+          <div class="skill"><span>HTML5</span><div class="bar"><i data-level="90"></i></div></div>
+          <div class="skill"><span>CSS3</span><div class="bar"><i data-level="80"></i></div></div>
+          <div class="skill"><span>JavaScript</span><div class="bar"><i data-level="65"></i></div></div>
+        </article>
+        <article class="card spot">
+          <h3>Programming</h3>
+          <div class="skill"><span>Python</span><div class="bar"><i data-level="55"></i></div></div>
+          <div class="skill"><span>Java</span><div class="bar"><i data-level="50"></i></div></div>
+          <div class="skill"><span>SQL</span><div class="bar"><i data-level="45"></i></div></div>
+        </article>
+        <article class="card spot">
+          <h3>Tools</h3>
+          <div class="chips"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Streamlit</span><span>TensorFlow</span><span>Figma</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <div class="head"><h2>Projects</h2><p>Some of the things I have built.</p></div>
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="ai">AI / ML</button>
+      </div>
+      <div class="project-grid">
+        <article class="card spot project" data-type="web">
+          <div class="thumb t1">Clock</div>
+          <h3>Clock App</h3>
+          <p>Live clock, countdown timer and stopwatch in one clean interface.</p>
+          <div class="chips small"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="links"><a href="#">Live demo</a><a href="#">Source code</a></div>
+        </article>
+        <article class="card spot project" data-type="web">
+          <div class="thumb t2">To-Do</div>
+          <h3>To-Do List</h3>
+          <p>Add, complete and delete tasks with saved progress.</p>
+          <div class="chips small"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="links"><a href="#">Live demo</a><a href="#">Source code</a></div>
+        </article>
+        <article class="card spot project" data-type="web">
+          <div class="thumb t3">Movies</div>
+          <h3>Movie Search</h3>
+          <p>Search any movie and see its poster, rating and details.</p>
+          <div class="chips small"><span>HTML</span><span>CSS</span><span>JS</span><span>API</span></div>
+          <div class="links"><a href="#">Live demo</a><a href="#">Source code</a></div>
+        </article>
+        <article class="card spot project" data-type="ai">
+          <div class="thumb t4">CropCare</div>
+          <h3>CropCare</h3>
+          <p>Detects tomato leaf diseases from a photo using deep learning.</p>
+          <div class="chips small"><span>Python</span><span>MobileNetV2</span><span>Streamlit</span></div>
+          <div class="links"><a href="#">Live demo</a><a href="#">Source code</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <div class="head"><h2>Get in touch</h2><p>Have an opportunity or an idea? Send me a message.</p></div>
+      <div class="contact-wrap">
+        <div class="card spot info">
+          <h3>Let's talk</h3>
+          <p>I am open to internships, collaborations and learning opportunities.</p>
+          <ul>
+            <li><span>Email</span><a href="mailto:xibedat440@fulldiets.com">xibedat440@fulldiets.com</a></li>
+            <li><span>GitHub</span><a href="https://github.com/kanak-tech" target="_blank" rel="noopener noreferrer">github.com/kanak-tech</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/kanak-prajapati-366333b9" target="_blank" rel="noopener noreferrer">linkedin.com/in/kanak-prajapati-366333b9</a></li>
+          </ul>
+        </div>
+        <form class="card form" id="contact-form" novalidate>
+          <label>Kanak Prajapati<input type="text" id="name" autocomplete="name"></label>
+          <label>xibedat440@fulldiets.com<input type="email" id="email" autocomplete="email"></label>
+          <label>Message<textarea id="message" rows="5"></textarea></label>
+          <button class="btn primary" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Kanak Prajapati. Built with HTML, CSS and JavaScript.</p>
+    <a href="#home" id="to-top">Back to top</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
